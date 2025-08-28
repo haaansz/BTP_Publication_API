@@ -1,0 +1,14 @@
+applications:
+  - name: PublicationAPI
+    path: ./
+    memory: 128M
+    stack: cflinuxfs4
+    disk_quota: 512M
+    buildpacks:
+      - python_buildpack
+    command: uvicorn app:app --host 0.0.0.0 --port $PORT
+    env:
+      NODE_ENV: development
+    services:
+      - xsuaa-publication-api
+      - multiaction
