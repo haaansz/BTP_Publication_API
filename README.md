@@ -8,7 +8,7 @@ CI/CD-Pipelines oder manuelle Deployments zu integrieren.
 
 ---
 
-## 📦 Manifest
+# 📦 Manifest
 
 ```yaml
 name: BTP_Publication_API
@@ -19,7 +19,7 @@ license: MIT
 repository: https://github.com/haaansz/BTP_Publication_API
 status: alpha
 
-⚙️ Requirements
+#⚙️ Requirements
 runtime:
   node: ">=18.x"        # oder java >=17, je nach Implementierung
 dependencies:
@@ -30,7 +30,8 @@ environment:
   - BTP_BASE_URL
   - BTP_API_TOKEN
 
-🚀 Installation
+
+#🚀 Installation
 # Repository klonen
 git clone https://github.com/haaansz/BTP_Publication_API.git
 cd BTP_Publication_API
@@ -39,7 +40,7 @@ cd BTP_Publication_API
 npm install        # falls Node.js
 # mvn install      # falls Java
 
-🔧 Configuration
+#🔧 Configuration
 env:
   BTP_BASE_URL: "https://<your-btp-endpoint>"
   BTP_API_TOKEN: "<token>"
@@ -48,7 +49,7 @@ optional:
   LOG_LEVEL: "debug | info | warn | error"
   PORT: 8080
 
-▶️ Usage
+#▶️ Usage
 
 Server starten:
 
@@ -77,7 +78,7 @@ Antwort:
   "message": "Publishing started"
 }
 
-🤝 Contributing
+#🤝 Contributing
 workflow:
   - Fork erstellen
   - Feature-Branch anlegen
@@ -89,13 +90,13 @@ guidelines:
   - Tests: jest/mocha (Node) oder JUnit (Java)
   - Commits: Conventional Commits
 
-📜 License
+#📜 License
 type: MIT
 url: https://opensource.org/licenses/MIT
 
 
 ---
 
-👉 Das Ganze ist im **Markdown mit Codeblöcken** formatiert und sollte beim Einfügen ins Repo sofort sauber gerendert werden.  
+#👉 Das Ganze ist im **Markdown mit Codeblöcken** formatiert und sollte beim Einfügen ins Repo sofort sauber gerendert werden.  
 
 Möchtest du, dass ich zusätzlich noch ein **kleines Architekturdiagramm in ASCII** (z. B. `Client → BTP_Publication_API → SAP BTP`) in einen Block einfüge, damit die README visuell etwas „catchiger“ wirkt?
